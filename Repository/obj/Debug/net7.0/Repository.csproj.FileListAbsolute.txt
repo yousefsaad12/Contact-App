@@ -1,0 +1,17 @@
+D:\ASP.NET Course\CRUDExample\Repository\bin\Debug\net7.0\Repository.deps.json
+D:\ASP.NET Course\CRUDExample\Repository\bin\Debug\net7.0\Repository.dll
+D:\ASP.NET Course\CRUDExample\Repository\bin\Debug\net7.0\Repository.pdb
+D:\ASP.NET Course\CRUDExample\Repository\bin\Debug\net7.0\Entities.dll
+D:\ASP.NET Course\CRUDExample\Repository\bin\Debug\net7.0\RepositoryContracts.dll
+D:\ASP.NET Course\CRUDExample\Repository\bin\Debug\net7.0\Entities.pdb
+D:\ASP.NET Course\CRUDExample\Repository\bin\Debug\net7.0\RepositoryContracts.pdb
+D:\ASP.NET Course\CRUDExample\Repository\obj\Debug\net7.0\Repository.csproj.AssemblyReference.cache
+D:\ASP.NET Course\CRUDExample\Repository\obj\Debug\net7.0\Repository.GeneratedMSBuildEditorConfig.editorconfig
+D:\ASP.NET Course\CRUDExample\Repository\obj\Debug\net7.0\Repository.AssemblyInfoInputs.cache
+D:\ASP.NET Course\CRUDExample\Repository\obj\Debug\net7.0\Repository.AssemblyInfo.cs
+D:\ASP.NET Course\CRUDExample\Repository\obj\Debug\net7.0\Repository.csproj.CoreCompileInputs.cache
+D:\ASP.NET Course\CRUDExample\Repository\obj\Debug\net7.0\Repository.csproj.CopyComplete
+D:\ASP.NET Course\CRUDExample\Repository\obj\Debug\net7.0\Repository.dll
+D:\ASP.NET Course\CRUDExample\Repository\obj\Debug\net7.0\refint\Repository.dll
+D:\ASP.NET Course\CRUDExample\Repository\obj\Debug\net7.0\Repository.pdb
+D:\ASP.NET Course\CRUDExample\Repository\obj\Debug\net7.0\ref\Repository.dll

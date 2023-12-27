@@ -1,0 +1,66 @@
+﻿@model PersonResponse
+
+@{
+    ViewBag.Title = "Delete Person";
+}
+
+<a type="button" class="btn btn-primary" asp-controller="Persons" asp-action="Index" class="link-hover"> <i class="fa-solid fa-arrow-left"></i> Back to Contact List</a>
+
+
+<div class="vh-100 gradient-custom ">
+    <div class="container py-5 h-100">
+        <div class="row justify-content-center align-items-center h-100">
+            <div class="col-12 col-lg-9 col-xl-7">
+                <div class="card shadow-2-strong card-registration" style="border-radius: 15px;">
+                    <div class="card-body p-4 p-md-5">
+
+                        <h3 class="mb-4 pb-2 pb-md-0 mb-md-5">Delete Contact</h3>
+
+        <form asp-controller="Persons" asp-action="Delete" method="post">
+
+        <input type="hidden" asp-for="PersonId"/>
+        @*PersonName*@
+           <div class="form-outline">
+            <div class="w-25">
+                <label asp-for="Name" class="form-label pt">Name</label>
+            </div>
+            <div class="flex-1">
+                <input asp-for="Name" class="form-control form-control-lg" disabled />
+                <span asp-validation-for="Name" class="text-red"></span>
+            </div>
+        </div>
+
+
+        @*Email*@
+           <div class="form-outline">
+            <div class="w-25">
+                <label asp-for="Email" class="form-label pt">Email</label>
+            </div>
+            <div class="flex-1">
+                <input asp-for="Email" class="form-control form-control-lg" disabled  />
+                <span asp-validation-for="Email" class="text-red"></span>
+            </div>
+        </div>
+
+        @*Submit*@
+           <div class="form-outline m-3 float-end">
+            <div class="w-25">
+            </div>
+            <div class="flex-1">
+                 <button class="btn btn-outline-danger btn-lg">Delete</button>
+
+                <div asp-validation-summary="All" class="text-red"></div>
+
+            </div>
+        </div>
+
+    
+        </form>
+  </div>
+
+  </div>
+  </div>
+  </div>
+  </div>
+  </div>
+

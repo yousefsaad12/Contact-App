@@ -1,0 +1,15 @@
+D:\ASP.NET Course\CRUDExample\ServiceContracts\bin\Debug\net7.0\ServiceContracts.deps.json
+D:\ASP.NET Course\CRUDExample\ServiceContracts\bin\Debug\net7.0\ServiceContracts.dll
+D:\ASP.NET Course\CRUDExample\ServiceContracts\bin\Debug\net7.0\ServiceContracts.pdb
+D:\ASP.NET Course\CRUDExample\ServiceContracts\bin\Debug\net7.0\Entities.dll
+D:\ASP.NET Course\CRUDExample\ServiceContracts\bin\Debug\net7.0\Entities.pdb
+D:\ASP.NET Course\CRUDExample\ServiceContracts\obj\Debug\net7.0\ServiceContracts.csproj.AssemblyReference.cache
+D:\ASP.NET Course\CRUDExample\ServiceContracts\obj\Debug\net7.0\ServiceContracts.GeneratedMSBuildEditorConfig.editorconfig
+D:\ASP.NET Course\CRUDExample\ServiceContracts\obj\Debug\net7.0\ServiceContracts.AssemblyInfoInputs.cache
+D:\ASP.NET Course\CRUDExample\ServiceContracts\obj\Debug\net7.0\ServiceContracts.AssemblyInfo.cs
+D:\ASP.NET Course\CRUDExample\ServiceContracts\obj\Debug\net7.0\ServiceContracts.csproj.CoreCompileInputs.cache
+D:\ASP.NET Course\CRUDExample\ServiceContracts\obj\Debug\net7.0\ServiceContracts.csproj.CopyComplete
+D:\ASP.NET Course\CRUDExample\ServiceContracts\obj\Debug\net7.0\ServiceContracts.dll
+D:\ASP.NET Course\CRUDExample\ServiceContracts\obj\Debug\net7.0\refint\ServiceContracts.dll
+D:\ASP.NET Course\CRUDExample\ServiceContracts\obj\Debug\net7.0\ServiceContracts.pdb
+D:\ASP.NET Course\CRUDExample\ServiceContracts\obj\Debug\net7.0\ref\ServiceContracts.dll

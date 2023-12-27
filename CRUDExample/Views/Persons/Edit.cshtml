@@ -1,0 +1,155 @@
+﻿@model PersonUpdateRequest
+
+@{
+    ViewBag.Title = "Create Person";
+}
+
+<a type="button" class="btn btn-primary" asp-controller="Persons" asp-action="Index" class="link-hover"> <i class="fa-solid fa-arrow-left"></i> Back to Persons List </a>
+
+
+<div class="vh-100 gradient-custom ">
+    <div class="container py-5 h-100">
+        <div class="row justify-content-center align-items-center h-100">
+            <div class="col-12 col-lg-9 col-xl-7">
+                <div class="card shadow-2-strong card-registration" style="border-radius: 15px;">
+                    <div class="card-body p-4 p-md-5">
+                        <h3 class="mb-4 pb-2 pb-md-0 mb-md-5"> Edit Contact</h3>
+
+    <form asp-controller="Persons" asp-action="Edit" method="post">
+
+        <input type="hidden" asp-for="PersonId"/>
+
+       <div class="row">
+
+        @*PersonName*@
+        <div class="col-md-6 mb-4">
+            <div class="form-outline">
+                 <label asp-for="Name" class="form-label"> Name </label>
+                 <input asp-for="Name" class="form-control form-control-lg" />
+                <span asp-validation-for="Name" class="text-red"></span>
+            </div>
+        </div>
+
+
+        @*Email*@
+          <div class="col-md-6 mb-4">
+             <div class="form-outline">
+                <label asp-for="Email" class="form-label pt">Email</label>
+
+                <input asp-for="Email" class="form-control form-control-lg" />
+                <span asp-validation-for="Email" class="text-red"></span>
+            </div>
+        </div>
+        </div>
+
+        <div class="row">
+
+        @*DateOfBirth*@
+            <div class="col-md-6 mb-4">
+             <div class="form-outline datepicker w-100">
+                <label asp-for="DateOfBrith" class="form-label pt">Date of Birth</label>
+                <input asp-for="DateOfBrith" class="form-control form-control-lg" />
+                <span asp-validation-for="DateOfBrith" class="text-red"></span>
+            </div>
+        </div>
+
+        @*Gender*@
+           <div class="col-md-6 mb-4 d-flex align-items-center">
+
+            
+                <label class="form-label m-1">Gender: </label>
+           
+            
+                @{
+                    string[] genders = (string[])Enum.GetNames(typeof(GenderOptions));
+                }
+                @foreach (string gender in genders)
+                {
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" asp-for="Gender" value="@gender" />
+                        <label for="@gender">@gender</label>
+                    </div>
+                }
+                <span asp-validation-for="Gender" class="text-red"></span>
+            
+            </div>
+
+         </div>
+
+
+        <div class="row">
+
+        @*Country*@
+        <div class="col-md-6 mb-4">
+
+             <div class="form-outline datepicker w-100">
+
+                <label class="form-label" asp-for="CountryId">Country</label>
+
+                 <select asp-for="CountryId" class="select form-control-lg" asp-items="@ViewBag.Countries">
+                    <option value="">Please Select</option>
+                </select>
+                <span asp-validation-for="CountryId" class="text-red"></span>
+            </div>
+
+        </div>
+
+
+        @*Address*@
+        <div class="col-md-6  mb-4">
+
+           <div class="form-outline">
+                <label asp-for="Address" class="form-label pt">Address</label>
+
+                <textarea asp-for="Address" class="form-control form-control-lg"></textarea>
+                <span asp-validation-for="Address" class="text-red"></span>
+            </div>
+
+        </div>
+
+        </div>
+
+        <div class="row">
+
+        @*ReceiveNewsLetters*@
+           <div class="col-md-6 mb-4">
+             <div class="form-outline">
+
+                <input asp-for="ReceiveNewsLetters" value="true" />
+                <label asp-for="ReceiveNewsLetters" class="form-label">Receive News Letters</label>
+                <span asp-validation-for="ReceiveNewsLetters" class="text-red"></span>
+
+            </div>
+        </div>
+
+        @*Submit*@
+          <div class="col-md-6 mb-4">
+             <div class="form-outline">
+
+              <button class="btn btn-outline-success btn-lg">Edit</button>
+
+                <div asp-validation-summary="All" class="text-red"></div>
+
+                @if (ViewBag.Errors != null)
+                {
+                    <div class="text-red ml">
+                        <ul>
+                            @foreach (string error in ViewBag.Errors)
+                            {
+                                <li class="ml">@error</li>
+                            }
+                        </ul>
+                    </div>
+                }
+            </div>
+        </div>
+        </div>
+
+    </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
