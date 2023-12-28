@@ -54,7 +54,8 @@ namespace Repository
         {
             Person ? matchingPerson = await _db.Persons.FirstOrDefaultAsync(p => p.PersonId == person.PersonId);
 
-            if (matchingPerson == null) { return person; }
+            if (matchingPerson == null) 
+                return person; 
 
             matchingPerson.Gender = person.Gender;
             matchingPerson.Address = person.Address;
@@ -63,8 +64,10 @@ namespace Repository
             matchingPerson.CountryId = person.CountryId;
             matchingPerson.DateOfBrith = person.DateOfBrith;
             matchingPerson.Name = person.Name;   
+
+            _db.Update(matchingPerson);
             
-            await _db.SaveChangesAsync();
+            int countUpdated = await _db.SaveChangesAsync();
             
             return matchingPerson;
         }

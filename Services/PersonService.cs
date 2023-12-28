@@ -149,7 +149,15 @@ namespace Services
             if(person == null)
                 throw new ArgumentException("Person Id is not found");
 
-           await _personsRepository.UpdatePerson(person);
+            person.Name = personUpdateRequest.Name;
+            person.Email = personUpdateRequest.Email;
+            person.DateOfBrith = personUpdateRequest.DateOfBrith;
+            person.Gender = personUpdateRequest.Gender.ToString();
+            person.CountryId = personUpdateRequest.CountryId;
+            person.Address = personUpdateRequest.Address;
+            person.ReceiveNewsLetters = personUpdateRequest.ReceiveNewsLetters;
+
+            await _personsRepository.UpdatePerson(person);
 
            return person.ToPersonResponse();
         }
