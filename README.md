@@ -13,8 +13,6 @@ Welcome to the Contact App project! This ASP.NET MVC application combines the po
 - [Usage](#usage)
 - [Data Validation](#data-validation)
 - [Unit Testing](#unit-testing)
-- [Contributing](#contributing)
-- [License](#license)
 
 ## Introduction
 
@@ -76,8 +74,6 @@ Before you begin, ensure you have the following prerequisites:
 1. Navigate to [http://localhost:yourport](http://localhost:yourport) in your web browser.
 
 2. Explore the features, add contacts, and manage your contact list efficiently.
-
-3. [Include any additional usage instructions or features here.]
 
 ## Data Validation
 
